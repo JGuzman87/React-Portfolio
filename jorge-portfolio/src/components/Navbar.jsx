@@ -1,13 +1,16 @@
 function Navbar() {
+  // const links = ["About Me", "Profile", "Contact", "Resume"];
+
+  // links.map((links) => <a>{links}</a>);
 
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
           Jorge Guzman
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -15,20 +18,20 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav ms-auto">
+            <a className="nav-link active" aria-current="page" href="#">
               About Me
             </a>
-            <a class="nav-link" href="#">
+            <a className="nav-link" href="#">
               Profile
             </a>
-            <a class="nav-link" href="#">
+            <a className="nav-link" href="#">
               Contact
             </a>
-            <a class="nav-link" href="#">
+            <a className="nav-link" href="#">
               Resume
             </a>
           </div>
