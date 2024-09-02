@@ -5,12 +5,11 @@ function Navbar() {
 
   return (
     <nav
-      className="navbar navbar-expand-lg bg-primary-subtle
+      className="navbar navbar-expand-lg bg-primary-subtle font-monospace
 "
       data-bs-theme="dark"
     >
       <div className="container-fluid">
-       
         <h2 class="text-secondary-emphasis">Jorge Guzman</h2>
         <button
           className="navbar-toggler"

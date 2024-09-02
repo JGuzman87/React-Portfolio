@@ -2,7 +2,7 @@
 function Footer() {
     return (
       <div
-        className="project-footer text-body-secondary bg-primary-subtle"
+        className="project-footer text-body-secondary bg-primary-subtle font-monospace"
         data-bs-theme="dark"
       >
         <p>
@@ -14,7 +14,6 @@ function Footer() {
               src="https://media.licdn.com/dms/image/v2/C560BAQHaVYd13rRz3A/company-logo_100_100/company-logo_100_100/0/1638831590218/linkedin_logo?e=1733356800&v=beta&t=bZPD54WF0NxOcROnL5xtmw7PDvr7dQ8WJqDLSXcLWfI"
               alt="Linkedin Profile"
               style={{ width: "45px", height: "45px" }}
-              
             />
             Linkedin
           </a>

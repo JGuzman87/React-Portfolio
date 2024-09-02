@@ -1,7 +1,7 @@
 
 export default function Portfolio() {
   return (
-    <div className="bg-dark text-white min-vh-100 p-4">
+    <div className="bg-dark text-white min-vh-100 p-4 font-monospace">
       <h1>Portfolio</h1>
       <div className="container text-center">
         <div className="row">

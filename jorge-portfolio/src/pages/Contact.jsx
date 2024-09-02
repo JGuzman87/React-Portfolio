@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-      <div className="bg-dark text-white min-vh-100 p-4">
+      <div className="bg-dark text-white min-vh-100 p-4 font-monospace">
         <h1>Contact Me</h1>
         <body class="bg-dark p-3 m-0 border-0">
           <div className="form-floating mb-3">
