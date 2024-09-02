@@ -10,6 +10,7 @@ function Navbar() {
       data-bs-theme="dark"
     >
       <div className="container-fluid">
+       
         <h2 class="text-secondary-emphasis">Jorge Guzman</h2>
         <button
           className="navbar-toggler"
