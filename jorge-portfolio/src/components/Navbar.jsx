@@ -1,14 +1,16 @@
-function Navbar() {
-  // const links = ["About Me", "Profile", "Contact", "Resume"];
+import { Link, useLocation } from 'react-router-dom';
 
-  // links.map((links) => <a>{links}</a>);
+function Navbar() {
+  const currentPage = useLocation().pathname;
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav
+      className="navbar navbar-expand-lg bg-primary-subtle
+"
+      data-bs-theme="dark"
+    >
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Jorge Guzman
-        </a>
+        <h2 class="text-secondary-emphasis">Jorge Guzman</h2>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,18 +24,38 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-link active" aria-current="page" href="#">
+            <Link
+              to="/About"
+              className={` "nav-link" ${
+                currentPage === "/About" ? "nav-link active" : "nav-link"
+              }`}
+            >
               About Me
-            </a>
-            <a className="nav-link" href="#">
-              Profile
-            </a>
-            <a className="nav-link" href="#">
+            </Link>
+
+            <Link
+              to="/Portfolio"
+              className={` "nav-link" ${
+                currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
+              }`}
+            >
+              Portfolio
+            </Link>
+            <Link
+              to="/Contact"
+              className="nav-link"
+              {...(currentPage === "/Contact" ? "nav-link active" : "navlink")}
+            >
               Contact
-            </a>
-            <a className="nav-link" href="#">
+            </Link>
+
+            <Link
+              to="/Resume"
+              className="nav-link"
+              {...(currentPage === "/Resume" ? "nav-link-active" : "navlink")}
+            >
               Resume
-            </a>
+            </Link>
           </div>
         </div>
       </div>
