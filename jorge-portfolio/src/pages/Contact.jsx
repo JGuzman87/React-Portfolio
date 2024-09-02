@@ -1,12 +1,11 @@
 export default function Contact() {
     return (
-      
-        <div className="bg-dark text-white min-vh-100 p-4">
-      <h1>Contact Me</h1>
+      <div className="bg-dark text-white min-vh-100 p-4">
+        <h1>Contact Me</h1>
         <body class="bg-dark p-3 m-0 border-0">
           <div className="form-floating mb-3">
             <input
-              type="text" 
+              type="text"
               className="form-control"
               id="floatingInput"
               placeholder="name"
@@ -24,12 +23,15 @@ export default function Contact() {
           </div>
           <div className="form-floating">
             <textarea
-              className="form-control"
+              className="form-control mb-3"
               placeholder="Leave a comment here"
               id="floatingTextarea1"
               style={{ height: "100px" }} // Corrected style format
             ></textarea>
             <label htmlFor="floatingTextarea1">Comments</label>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
           </div>
         </body>
       </div>
