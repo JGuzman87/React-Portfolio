@@ -1,15 +1,16 @@
+import './About.css'
 export default function About() {
     return (
-      <div className="bg-dark text-white min-vh-100 p-4 font-monospace">
+      <div className="about-container">
         <h1>About Me</h1>
         <img
           src="./images/1725048640859.jpeg"
           alt="Logo"
           width="100"
-          height="100"
+          height="90"
           clasNames="d-inline-block align-text-top"
         ></img>
-        <p className="fs-4 font-monospace">
+        <p>
           After 16 years in the banking industry, I am now pursuing my passion
           for technology by transitioning into full stack development. I have a
           strong background in problem-solving, customer service, and project
