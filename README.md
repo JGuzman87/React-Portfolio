@@ -12,13 +12,13 @@
 
   The purpose of this project is to create a profesional portfolio where potential employers can view my profile and projects
 
-  ![alt text](./jorge-portfolio//images/image.png)
+  ![alt text](/images/image.png)
 
-  ![alt text](./jorge-portfolio/images/image-1.png)
+  ![alt text](/images/image-1.png)
 
   
   
-  website: https://mvc-techblog-755i.onrender.com
+  website: https://snazzy-cactus-1c12b6.netlify.app/About
   ## Installation
 
   To install, clone Github repository and install on local machine.

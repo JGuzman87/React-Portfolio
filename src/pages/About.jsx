@@ -4,7 +4,7 @@ export default function About() {
       <div className="about-container">
         <h1>About Me</h1>
         <img
-          src="./images/1725048640859.jpeg"
+          src="/images/1725048640859.jpeg"
           alt="Logo"
           width="100"
           height="90"
