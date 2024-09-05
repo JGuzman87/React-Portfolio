@@ -18,7 +18,7 @@
 
   
   
-  website: https://snazzy-cactus-1c12b6.netlify.app/About
+  website: https://snazzy-cactus-1c12b6.netlify.app
   ## Installation
 
   To install, clone Github repository and install on local machine.
