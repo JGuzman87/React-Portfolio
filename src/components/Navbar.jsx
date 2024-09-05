@@ -26,7 +26,7 @@ function Navbar() {
           <div className="navbar-nav ms-auto">
             <Link
               to="/About"
-              className={` "nav-link" ${
+              className={` nav-link ${
                 currentPage === "/About" ? "nav-link active" : "nav-link"
               }`}
             >
@@ -35,7 +35,7 @@ function Navbar() {
 
             <Link
               to="/Portfolio"
-              className={` "nav-link" ${
+              className={` nav-link ${
                 currentPage === "/Portfolio" ? "nav-link active" : "nav-link"
               }`}
             >
@@ -43,16 +43,16 @@ function Navbar() {
             </Link>
             <Link
               to="/Contact"
-              className="nav-link"
-              {...(currentPage === "/Contact" ? "nav-link active" : "navlink")}
+              className=
+              { `nav-link ${(currentPage === "/Contact" ? "nav-link active" : "navlink")}`}
             >
               Contact
             </Link>
 
             <Link
               to="/Resume"
-              className="nav-link"
-              {...(currentPage === "/Resume" ? "nav-link-active" : "navlink")}
+              className=
+              {`nav-link ${(currentPage === "/Resume" ? "nav-link-active" : "navlink")}`}
             >
               Resume
             </Link>
