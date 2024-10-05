@@ -14,3 +14,7 @@
   margin-bottom: 1rem; 
   max-width: 800px; 
 }
+
+img {
+  border: solid white;
+}

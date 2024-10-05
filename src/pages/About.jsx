@@ -4,7 +4,7 @@ export default function About() {
       <div className="about-container">
         <h1>About Me</h1>
         <img
-          src="https://media.licdn.com/dms/image/v2/D4D03AQFCQUYFdjn0VA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725048640859?e=1730937600&v=beta&t=3SAAdSRpB-r915EjwafjTpe7iZNOF9RHixdLfQHW0NQ"
+          src="./images/IMG_1913.jpeg"
           alt="Logo"
           width="100"
           height="90"
