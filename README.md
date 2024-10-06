@@ -12,9 +12,9 @@
 
   The purpose of this project is to create a profesional portfolio where potential employers can view my profile and projects
 
-  ![alt text](/images/image.png)
+  ![alt text](/public/images/image.png)
 
-  ![alt text](/images/image-1.png)
+  ![alt text](/public/images/image-1.png)
 
   
   
