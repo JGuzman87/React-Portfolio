@@ -4,8 +4,6 @@
     height: 150px;
 }
 
-
-
 .link-primary {
 
 display: inline-block;
@@ -15,6 +13,22 @@ margin-left: 50%;
 
 .link-secondary {
 margin-left: 10px;
+
+}
+
+p {
+    font-family: 'Caveat', cursive; 
+    font-size: 20px;
+}
+
+h1 {
+        font-family: 'Caveat', cursive; 
+
+}
+
+div {
+        font-family: 'Caveat', cursive; 
+        font-size: 30px;
 
 }
 

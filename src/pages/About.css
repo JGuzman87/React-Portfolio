@@ -3,11 +3,11 @@
   color: #ffffff; 
   min-height: 100vh;
   padding: 2rem;
-  font-family: 'Arial', sans-serif; 
+  font-family: 'Caveat', cursive; 
 }
 
 .about-container p {
-  font-size: 20px; 
+  font-size: 30px; 
   line-height: 1.6; 
   text-align: justify; 
   margin-top: 50px; 
