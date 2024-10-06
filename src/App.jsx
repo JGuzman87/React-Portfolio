@@ -10,6 +10,9 @@ function App() {
       <Header />
       <Outlet />
       <Footer />
+
+      <body></body>
+
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
       <link
         rel="preconnect"

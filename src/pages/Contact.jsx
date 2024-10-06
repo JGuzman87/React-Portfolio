@@ -36,9 +36,9 @@ function Contact() {
   }
 
     return (
-      <div className="bg-dark text-white min-vh-100 p-4 font-monospace">
+      <div className="text-white min-vh-100 p-4 font-monospace">
         <h1>Contact Me</h1>
-        <div className="bg-dark p-3 m-0 border-0">
+        <div className="contact-container p-3 m-0 border-0">
           <form className="form-floating mb-3" onSubmit={handleFormSubmit}>
             <div className="form-floating mb-3">
               <input
