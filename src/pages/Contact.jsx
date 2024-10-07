@@ -38,9 +38,10 @@ function Contact() {
     return (
       <div className="text-white min-vh-100 p-4 font-monospace">
         <h1>Contact Me</h1>
-        <div className="contact-container p-3 m-0 border-0">
+        
           <form className="form-floating mb-3" onSubmit={handleFormSubmit}>
             <div className="form-floating mb-3">
+              <p>Name</p>
               <input
                 name="name"
                 value={name}
@@ -50,9 +51,9 @@ function Contact() {
                 id="floatingInput"
                 placeholder="name"
               />
-              <label htmlFor="floatingInput">Name</label>
             </div>
             <div className="form-floating mb-3">
+              <p>Email Address</p>
               <input
                 name="email"
                 value={email}
@@ -62,9 +63,9 @@ function Contact() {
                 id="floatingInputEmail"
                 placeholder="name@example.com"
               />
-              <label htmlFor="floatingInputEmail">Email address</label>
             </div>
             <div className="form-floating mb-3">
+              <p>Comments</p>
               <textarea
                 name="comment"
                 value={comment}
@@ -74,7 +75,6 @@ function Contact() {
                 id="floatingTextarea1"
                 style={{ height: "100px" }}
               ></textarea>
-              <label htmlFor="floatingTextarea1">Comments</label>
             </div>
             {errorMessage && (
               <div className="text-danger mb-3">{errorMessage}</div>
@@ -83,7 +83,7 @@ function Contact() {
               Submit
             </button>
           </form>
-        </div>
+       
       </div>
     );
 }

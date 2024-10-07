@@ -40,10 +40,11 @@ body {
   width: 100%;
 }
 
-.contact-container {
-  
+form {
+  width:50%;
   background-color: #031633;
-  width: 50%;
+  margin-left: 25%;
+
 }
 
 .resume-container {
