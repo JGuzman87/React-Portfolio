@@ -13,7 +13,7 @@ export default function Portfolio() {
                 src="/images/Video-Games-Blog.jpg"
                 alt="PAC-Overflow"
                 className="img-fluid"
-                style={{ width: "400px", height: "300px", objectFit: "cover" }}
+                
               />
             </a>
             <p>PAC-Overflow</p>
@@ -23,8 +23,7 @@ export default function Portfolio() {
               <img
                 src="/images/medium.png"
                 alt="Tune Tracker"
-                className="img-fluid"
-                style={{ width: "400px", height: "300px", objectFit: "cover" }}
+                className="img-fluid"  
               />
             </a>
             <p>Tune Tracker</p>
@@ -37,7 +36,6 @@ export default function Portfolio() {
                 src="/images/istockphoto-1440483244-612x612.jpg"
                 alt="FootyNet"
                 className="img-fluid"
-                style={{ width: "400px", height: "300px", objectFit: "cover" }}
               />
             </a>
             <p>FootyNet</p>
@@ -48,7 +46,6 @@ export default function Portfolio() {
                 src="/images/watercolor-weather-effects-collection_23-2149115331.avif"
                 alt="Weather Dashboard"
                 className="img-fluid"
-                style={{ width: "400px", height: "300px", objectFit: "cover" }}
               />
             </a>
             <p>Weather Dashboard</p>

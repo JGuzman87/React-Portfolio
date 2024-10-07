@@ -20,10 +20,14 @@ p {
   background-color: #031633;
   width: 50%;
   margin-left: 25%;
+  text-align: wrap;
 }
 
 .col img {
   border: 5px solid white;
+  width: 400px;
+  height: 300px;
+  
 }
 
 h1 {
@@ -44,6 +48,7 @@ form {
   width:50%;
   background-color: #031633;
   margin-left: 25%;
+  padding: 10px;
 
 }
 
@@ -52,4 +57,24 @@ form {
   background-color: #031633;
   width: 300px;
   font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .col img {
+    width: 200px;
+    height: 150px;
+  }
+
+  form {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .col p {
+  font-size: 50%;
+  width: 25%;
+  margin-left: 35%;
+}
+
+
 }
