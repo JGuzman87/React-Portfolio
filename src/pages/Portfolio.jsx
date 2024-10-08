@@ -16,7 +16,7 @@ export default function Portfolio() {
                 
               />
             </a>
-            <div className="p-backgroud">
+            
             <p>PAC-Overflow</p>
             </div>
           </div>

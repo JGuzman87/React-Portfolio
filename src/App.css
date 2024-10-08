@@ -60,12 +60,15 @@ form {
   font-size: 30px;
 }
 
+
+
 @media (max-width: 600px) {
   .col img {
     margin-top: 40%;
     width: 100%;
     height: 80%;
     object-fit: cover;
+    display: inline-block;
     
   }
 
