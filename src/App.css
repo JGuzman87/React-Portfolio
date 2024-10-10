@@ -17,6 +17,7 @@
 
 .link-primary img {
   width: 50px;
+  
 }
 
 .link-secondary img {
@@ -33,7 +34,8 @@ p {
 .img-fluid {
   border: 5px solid white;
   width: 100%;
-  height: 400px;
+  height: 300px;
+ 
 }
 
 h1 {
