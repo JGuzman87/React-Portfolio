@@ -2,10 +2,10 @@ import '../App.css'
 
 export default function Portfolio() {
   return (
-    <div className=" text-white min-vh-100 p-4 font-monospace">
+    <div className=" text-white min-vh-100 p-4 ">
       <h1>Portfolio</h1>
 
-      <div className="container text-center">
+      <div className="portfolio-container text-center">
         <div className="row">
           <div className="col">
             <a href="https://pac-overflow.onrender.com/api/posts/">
@@ -13,12 +13,9 @@ export default function Portfolio() {
                 src="/images/Video-Games-Blog.jpg"
                 alt="PAC-Overflow"
                 className="img-fluid"
-                
               />
             </a>
-            
             <p>PAC-Overflow</p>
-            
           </div>
           <div className="col">
             <a href="https://the-great-code-calamity.github.io/tune_tracker/">
@@ -31,7 +28,7 @@ export default function Portfolio() {
             <p>Tune Tracker</p>
           </div>
         </div>
-        <div className="row mt-4">
+        <div className="row">
           <div className="col">
             <a href="https://footy-net.onrender.com/">
               <img

@@ -1,16 +1,23 @@
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .small-image {
   width: 150px;
   height: 150px;
 }
 
-.link-primary {
-  display: inline-block;
-  margin-left: 50%;
+.link-primary img {
+  width: 50px;
 }
 
-.link-secondary {
-  margin-left: 10px;
+.link-secondary img {
+  width: 40px
+
 }
+
 
 p {
   font-family: "Caveat", cursive;
@@ -18,12 +25,11 @@ p {
 }
 .col p {
   /* background-color: #031633; */
-  width: 50%;
-  margin-left: 25%;
-  text-align: wrap;
+width: auto;
+text-align: center;
 }
 
-.col img {
+.img-fluid {
   border: 5px solid white;
   width: 75%;
   height: 80%;
@@ -53,6 +59,7 @@ form {
 }
 
 
+
 .resume-container {
   border: solid white;
   background-color: #031633;
@@ -60,25 +67,33 @@ form {
   font-size: 30px;
 }
 
+.project-footer {
+  background-color: #031633;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 
 
 @media (max-width: 1400px) {
 
-  .container {
+  .portfolio-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
+    margin-top: 25%;
     
   }
 
-  .container * {
+  .portfolio-container * {
     flex-basis: 300px;
   }
-  .col img {
-    margin-top: 10%;
-    width: 100%; 
-    object-fit: cover;
-    
+
+  img-fluid {
+  border: 5px solid white;
+  width: 75%;
+  height: 80%;
   }
 
   form {
@@ -87,15 +102,16 @@ form {
   }
 
   .col p {
-  font-size: 50%;
-  width: 25%;
-  margin-left: 35%;
+  
+  width: auto;
+  text-align: center;
   
 }
 
-.project-footer img {
-  margin-left: -30px;
-  padding: 10px;
+.project-footer  {
+ display: flex;
+ justify-content: center;
+ width: 100%;
 }
 
 }
