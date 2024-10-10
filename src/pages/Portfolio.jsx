@@ -16,8 +16,8 @@ export default function Portfolio() {
               />
             </a>
             <p>PAC-Overflow</p>
-          </div>
-          <div className="col">
+          
+          
             <a href="https://the-great-code-calamity.github.io/tune_tracker/">
               <img
                 src="/images/medium.png"
@@ -26,10 +26,8 @@ export default function Portfolio() {
               />
             </a>
             <p>Tune Tracker</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
+         </div>
+            <div className="col">
             <a href="https://footy-net.onrender.com/">
               <img
                 src="/images/istockphoto-1440483244-612x612.jpg"
@@ -38,8 +36,6 @@ export default function Portfolio() {
               />
             </a>
             <p>FootyNet</p>
-          </div>
-          <div className="col">
             <a href="https://jguzman87.github.io/weather-dashboard/">
               <img
                 src="/images/watercolor-weather-effects-collection_23-2149115331.avif"
@@ -48,9 +44,10 @@ export default function Portfolio() {
               />
             </a>
             <p>Weather Dashboard</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        </div>
+     
   );
 }
