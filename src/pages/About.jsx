@@ -1,8 +1,11 @@
 import "./About.css";
 export default function About() {
   return (
-    <div className="about-container">
+
+    <div>
       <h1>About Me</h1>
+    <div className="about-container">
+      
       <img
         src="/images/IMG_1913.jpeg"
         alt="Logo"
@@ -33,6 +36,7 @@ export default function About() {
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
         rel="stylesheet"
       ></link>
+    </div>
     </div>
   );
 }

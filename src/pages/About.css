@@ -1,9 +1,11 @@
 .about-container {
-  
+ 
+  margin-top: 10%;
   color: #ffffff; 
   min-height: 100vh;
   padding: 2rem;
   font-family: 'Caveat', cursive; 
+
   
 }
 
@@ -13,7 +15,7 @@
   text-align: justify; 
   margin-top: 50px; 
   margin-bottom: 1rem; 
-  max-width: 800px; 
+  max-width: 10000px; 
   border: solid white;
   background-color: #031633;
   padding: 10px;
@@ -27,5 +29,8 @@
 
 }
 
+h1 {
+  color: white
+}
 
 

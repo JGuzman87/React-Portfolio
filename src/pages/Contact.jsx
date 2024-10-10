@@ -38,8 +38,8 @@ function Contact() {
     return (
       <div className="text-white min-vh-100 p-4 font-monospace">
         <h1>Contact Me</h1>
-        
-          <form className="form-floating mb-3" onSubmit={handleFormSubmit}>
+        <div className="form-container ">
+          <form className=" form-floating mb-3" onSubmit={handleFormSubmit}>
             <div className="form-floating mb-3">
               <p>Name</p>
               <input
@@ -83,7 +83,7 @@ function Contact() {
               Submit
             </button>
           </form>
-       
+        </div>
       </div>
     );
 }
