@@ -8,7 +8,7 @@ export default function Portfolio() {
       <div className="portfolio-container text-center">
         <div className="row">
           <div className="col">
-            <a href="https://pac-overflow.onrender.com/api/posts/">
+            <a href="https://pac-overflow-trfb.onrender.com">
               <img
                 src="/images/Video-Games-Blog.jpg"
                 alt="PAC-Overflow"
@@ -16,18 +16,17 @@ export default function Portfolio() {
               />
             </a>
             <p>PAC-Overflow</p>
-          
-          
+
             <a href="https://the-great-code-calamity.github.io/tune_tracker/">
               <img
                 src="/images/medium.png"
                 alt="Tune Tracker"
-                className="img-fluid"  
+                className="img-fluid"
               />
             </a>
             <p>Tune Tracker</p>
-         </div>
-            <div className="col">
+          </div>
+          <div className="col">
             <a href="https://footy-net.onrender.com/">
               <img
                 src="/images/istockphoto-1440483244-612x612.jpg"
@@ -44,10 +43,9 @@ export default function Portfolio() {
               />
             </a>
             <p>Weather Dashboard</p>
-            </div>
           </div>
         </div>
-        </div>
-     
+      </div>
+    </div>
   );
 }
