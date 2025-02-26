@@ -1,91 +1,95 @@
-import { useState } from 'react';
-
-import { validateEmail } from '../../utils/helpers';
+import {useState, useEffect} from 'react';
+import { useForm, ValidationError } from "@formspree/react";
 
 
 function Contact() {
-  
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [comment, setComment] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-   
-    if (name === 'name'){
-      setName(value);
-    }else if(name === 'email') {
-      setEmail(value);
-    }else if (name === 'comment') {
-      setComment(value)
-    }
-  };
+  const [state, handleSubmit] = useForm("xbldvbyy");
+  const [formData, setFormData] = useState({name: '', email: '', comment: '',});
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
-    if(!validateEmail(email)) {
-      setErrorMessage('Not a valid email');
-      return;
-    }
-    setName('');
-    setEmail('');
-    setComment('');
-    setErrorMessage('');
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.vale});
   }
 
-    return (
-      <div className="text-white min-vh-100 p-4 font-monospace">
-        <h1>Contact Me</h1>
-        <div className="form-container ">
-          <form className=" form-floating mb-3" onSubmit={handleFormSubmit}>
+ useEffect(() => {
+  if (state.succeeded) {
+    setFormData({ name: "", email: "", comment: "" });
+  }
+ }, [state.succeeded]);
+
+
+
+  return (
+    <div className="text-white min-vh-100 p-4 font-monospace">
+      <h1>Contact Me</h1>
+      <div className="form-container ">
+        {state.succeeded && (
+          <p>Thank You for reaching out!</p>
+        )} 
+          <form className=" form-floating mb-3" onSubmit={handleSubmit}>
             <div className="form-floating mb-3">
               <p>Name</p>
               <input
                 name="name"
-                value={name}
                 type="text"
-                onChange={handleInputChange}
+                value={formData.name}
                 className="form-control"
                 id="floatingInput"
                 placeholder="name"
+                onChange={handleChange}
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
               />
             </div>
             <div className="form-floating mb-3">
               <p>Email Address</p>
               <input
                 name="email"
-                value={email}
                 type="email"
+                value={formData.email}
                 className="form-control"
-                onChange={handleInputChange}
                 id="floatingInputEmail"
                 placeholder="name@example.com"
+                onChange={handleChange}
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
               />
             </div>
             <div className="form-floating mb-3">
               <p>Comments</p>
               <textarea
                 name="comment"
-                value={comment}
-                onChange={handleInputChange}
                 className="form-control mb-3"
                 placeholder="Leave a comment here"
+                value={formData.comment}
                 id="floatingTextarea1"
                 style={{ height: "100px" }}
+                onChange={handleChange}
               ></textarea>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </div>
-            {errorMessage && (
-              <div className="text-danger mb-3">{errorMessage}</div>
-            )}
-            <button type="submit" className="btn btn-primary">
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className="btn btn-primary"
+            >
               Submit
             </button>
           </form>
-        </div>
+        
       </div>
-    );
+    </div>
+  );
 }
 
 export default Contact;
