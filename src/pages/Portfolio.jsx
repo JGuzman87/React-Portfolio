@@ -35,7 +35,7 @@ export default function Portfolio() {
               />
             </a>
             <p>FootyNet</p>
-            <a href="https://weather-dashboard-react-eymtwk73n.vercel.app/">
+            <a href="https://weather-dashboard-react-three.vercel.app">
               <img
                 src="/images/watercolor-weather-effects-collection_23-2149115331.avif"
                 alt="Weather Dashboard"
